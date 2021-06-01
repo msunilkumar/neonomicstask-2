@@ -3,8 +3,8 @@
 # Update hosts file
 echo "[Step 1] Update /etc/hosts file"
 cat >>/etc/hosts<<EOF
-192.168.48.10 k8smaster
-192.168.48.11 k8sworker1
+18.222.142.215 k8smaster
+3.17.69.3 k8sworker1
 EOF
 
 # Disable SELinux
