@@ -1,6 +1,5 @@
 pipeline{
-    #agent {label 'neo-k8s'}
-    ageny any
+    agent { label 'neo-k8s' }
     stages{
         stage('SCM'){
             steps{
