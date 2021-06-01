@@ -1,5 +1,5 @@
 pipeline{
-    node (label 'neo-k8s'){
+    node ('neo-k8s'){
     
     stages{
         stage('SCM'){
