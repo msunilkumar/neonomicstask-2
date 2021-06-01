@@ -1,5 +1,5 @@
 pipeline{
-    node ('neo-k8s'){
+    agent node ('neo-k8s'){
     
     stages{
         stage('SCM'){
