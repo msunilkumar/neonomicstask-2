@@ -1,5 +1,5 @@
 pipeline{
-    agent { label 'neo-k8s' }
+    agent any
     stages{
         stage('SCM'){
             steps{
