@@ -1,0 +1,3 @@
+[neo-k8s]
+18.222.142.215 ansible_user=ec2-user
+18.222.142.214 ansible_user=ec2-user
