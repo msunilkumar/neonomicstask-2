@@ -1,0 +1,19 @@
+version: '2'
+services:
+  python:
+    image: sunil4356/pythonapp:0.0.1
+    container_name: python
+    environment:
+      - "redis_host=redis"
+    ports:
+     - "8080:5000"
+    networks:
+      - neo-app
+  redis:
+    container_name: redis
+    image: "redis"
+    networks:
+      - neo-app
+networks:
+  neo-app:
+    driver: bridge
