@@ -1,5 +1,5 @@
 pipeline{
-    agent node ('neo-k8s'){
+    agent {label 'neo-k8s'}
     
     stages{
         stage('SCM'){
@@ -11,8 +11,6 @@ pipeline{
             steps{
                 step([$class: 'DockerComposeBuilder', dockerComposeFile: 'docker-compose.yml', option: [$class: 'StartAllServices'], useCustomDockerComposeFile: true])
             }
-        }
-        
-    }
+        } 
     }
 }
