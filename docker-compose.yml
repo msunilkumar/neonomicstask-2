@@ -6,7 +6,7 @@ services:
     environment:
       - "redis_host=redis"
     ports:
-     - "8080:5000"
+     - "8083:5000"
     networks:
       - neo-app
   redis:
